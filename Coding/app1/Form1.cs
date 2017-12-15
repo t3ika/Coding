@@ -84,16 +84,55 @@ namespace app1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            listBox2.Items.Add(listBox1.SelectedItem);
-            listBox1.Items.Remove(listBox1.SelectedItem);
-            listBox1.ClearSelected();
+            System.Windows.Forms.TextBox textbox9 = new System.Windows.Forms.TextBox();
+            textbox9.Text = listBox1.SelectedItem.ToString();
+            //MessageBox.Show(textbox9.Text);
+            string p = textbox9.Text;
+            string s2 = "simple";
+            bool b = p.Contains(s2);
+
+
+            if (b)
+            {
+                listBox2.Items.Add(listBox1.SelectedItem);
+                listBox1.Items.Remove(listBox1.SelectedItem);
+                listBox1.ClearSelected();
+            }
+
+            else
+            {
+                MessageBox.Show(" Impossible d'ajouter cette utilisateur à cette catégorie");
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            listBox2.Items.Add(listBox1.SelectedItem);
-            listBox1.Items.Remove(listBox1.SelectedItem);
-            listBox1.ClearSelected();
+            System.Windows.Forms.TextBox textbox9 = new System.Windows.Forms.TextBox();
+            textbox9.Text = listBox1.SelectedItem.ToString();
+            //MessageBox.Show(textbox9.Text);
+            string p = textbox9.Text;
+            string s2 = "simple";
+            string s3 = "double";
+            bool b = p.Contains(s3);
+            //bool z = p.Contains(s2 + s3);
+
+            if (b)
+                {
+                listBox3.Items.Add(listBox1.SelectedItem);
+                listBox1.Items.Remove(listBox1.SelectedItem);
+                listBox1.ClearSelected();
+            }
+            //if (z)
+            //{
+            //    listBox3.Items.Add(listBox1.SelectedItem);
+            //    listBox1.Items.Remove(listBox1.SelectedItem);
+            //    listBox1.ClearSelected();
+            //}
+
+            else
+            {
+                MessageBox.Show(" Impossible d'ajouter cette utilisateur à cette catégorie");
+            }
         }
     }
 }
