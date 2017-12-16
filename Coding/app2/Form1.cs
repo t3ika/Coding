@@ -21,5 +21,26 @@ namespace app2
             Form2 winAjout = new Form2();
             winAjout.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string[] tableau = new string[5];
+
+            tableau[0] = "TEST";
+            tableau[1] = "TEST";
+            tableau[2] = "TEST";
+            tableau[3] = "TEST";
+            tableau[4] = "TEST";
+
+            dataGridView1.DataSource = tableau;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string[] tableau = new string[5];
+            DataGridView1.Rows(i).Cells(j).Value = Tableau(i, j)
+
+
+        }
     }
 }
