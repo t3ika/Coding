@@ -30,6 +30,7 @@ namespace app1
         //}
         private void button1_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             if (checkBox2.Checked == true && checkBox1.Checked == true)
             {
                     var p = "simple";
@@ -52,6 +53,9 @@ namespace app1
             }
 
 
+=======
+            //*
+>>>>>>> 7368453496bb0c4931d75a5be77f87cd328e32b7
         }
 
         private void Form1_Load(object sender, EventArgs e)
