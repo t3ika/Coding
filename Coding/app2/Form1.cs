@@ -18,7 +18,8 @@ namespace app2
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Form2 winAjout = new Form2();
+            winAjout.Show();
         }
     }
 }
